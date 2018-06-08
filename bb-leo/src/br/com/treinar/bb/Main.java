@@ -35,7 +35,7 @@ public class Main {
 	private static void criarConta() {
 		Conta c = new Conta();
 		System.out.print("Informe o numero: ");
-		c.numero = input
+		c.numero = input.nextInt();
 	}
 
 	private static void imprimirMenu() {
