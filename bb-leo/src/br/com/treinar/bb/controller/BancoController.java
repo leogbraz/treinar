@@ -1,22 +1,13 @@
 package br.com.treinar.bb.controller;
 
 import br.com.treinar.bb.model.banco.Conta;
-import br.com.treinar.bb.model.banco.ContaCorrente;
-import br.com.treinar.bb.model.banco.ContaPoupanca;
-import br.com.treinar.bb.model.banco.ContaSalario;
 
 public class BancoController {
 
 	private Conta conta;
-
-	public void criarConta(ContaCorrente contaCorrente) {
-		System.out.println();
-	}
-	public void criarConta(ContaPoupanca contaPoupanca) {
-		System.out.println();
-	}
-	public void criarConta(ContaSalario contaSalario) {
-		System.out.println();
+	
+	public void criarConta(Conta conta) {
+		this.conta = conta;
 	}
 
 	public Conta getConta() {
@@ -29,5 +20,13 @@ public class BancoController {
 
 	public void depositar(double valor) {
 		conta.depositar(valor);
+	}
+
+	public double recuperarSaldo() {
+		return conta.getSaldo();
+	}
+
+	public void sacar(double valor) {
+		conta.sacar(valor);
 	}
 }

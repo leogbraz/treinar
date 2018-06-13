@@ -1,6 +1,6 @@
 package br.com.treinar.bb.model.banco;
 
-public class ContaSalario extends Conta{
+public class ContaSalario extends Conta {
 
 	private int diaCreditoSalario;
 
@@ -11,5 +11,7 @@ public class ContaSalario extends Conta{
 	public void setDiaCreditoSalario(int diaCreditoSalario) {
 		this.diaCreditoSalario = diaCreditoSalario;
 	}
-
+	
+	
+	
 }

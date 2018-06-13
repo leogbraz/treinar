@@ -2,7 +2,7 @@ package br.com.treinar.bb.model.banco;
 
 import br.com.treinar.bb.model.Cliente;
 
-public abstract class Conta {
+public class Conta {
 
 	private int numero;
 	private double saldo;

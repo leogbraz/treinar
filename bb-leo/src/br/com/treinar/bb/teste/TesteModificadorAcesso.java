@@ -1,7 +1,5 @@
 package br.com.treinar.bb.teste;
 
-import br.com.treinar.bb.model.banco.Conta;
-
 public class TesteModificadorAcesso {
 
 	public static void main(String[] args) {
