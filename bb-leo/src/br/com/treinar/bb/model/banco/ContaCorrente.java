@@ -37,13 +37,13 @@ public class ContaCorrente extends Conta implements IProdutoPagavel {
 		}
 		return deuParaSacar;
 	}
-	
+
 	@Override
 	public double consultarSaldo() {
 		double saldoAtual = super.consultarSaldo();
 		return saldoAtual + limiteCreditoAtual;
 	}
-	
+
 	@Override
 	public void depositar(double valorDeposito) {
 		double valorDevido = this.limiteCreditoAtual - this.limiteCredito;
@@ -71,5 +71,5 @@ public class ContaCorrente extends Conta implements IProdutoPagavel {
 	public void efetuarPagamento() {
 		super.sacar(this.va1orPagar);
 	}
-	
+
 }

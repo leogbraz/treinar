@@ -1,6 +1,6 @@
 package br.com.treinar.bb.model.banco;
 
-public interface IProdutoPagavel {
+public interface IProdutoPagavel {//Por padrão esta classe é publica, estatica e final
 
 	double getValorPagar();
 
