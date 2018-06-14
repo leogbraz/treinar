@@ -1,6 +1,7 @@
 package br.com.treinar.bb.controller;
 
 import br.com.treinar.bb.model.banco.Conta;
+import br.com.treinar.bb.model.banco.ContaPoupanca;
 
 public class BancoController {
 
@@ -19,14 +20,21 @@ public class BancoController {
 	}
 
 	public void depositar(double valor) {
-		conta.depositar(valor);
 	}
 
 	public double recuperarSaldo() {
-		return conta.getSaldo();
+		return conta.consultarSaldo();
 	}
 
 	public void sacar(double valor) {
 		conta.sacar(valor);
+	}
+
+	public void alterarTaxaRendimento(float novaTaxa) {
+		ContaPoupanca.setTaxaRendimento(novaTaxa);
+	}
+
+	public float recuperarTaxaRendimento() {
+		return ContaPoupanca.getTaxaRendimento();
 	}
 }
