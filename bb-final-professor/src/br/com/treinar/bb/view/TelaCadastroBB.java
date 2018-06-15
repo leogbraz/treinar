@@ -52,7 +52,7 @@ public class TelaCadastroBB {
 				break;
 
 			default:
-				System.out.println("Opcção inválida");
+				System.out.println("Opção inválida");
 				break;
 			}
 		} while (opcao != 0);
@@ -128,12 +128,12 @@ public class TelaCadastroBB {
 
 	public void criarContaGenerica(Conta conta) {
 		input.nextLine();
-		System.out.print("Inform o numero da conta: ");
+		System.out.print("Informe o numero da conta: ");
 		int numeroConta = input.nextInt();
 		input.nextLine();
-		System.out.print("Inform o nome do cliente: ");
+		System.out.print("Informe o nome do cliente: ");
 		String nomeCliente = input.nextLine();
-		System.out.print("Inform o CPF do cliente: ");
+		System.out.print("Informe o CPF do cliente: ");
 		String cpfCliente = input.nextLine();
 		conta.setCliente(new Cliente());
 		conta.getCliente().setNome(nomeCliente);
@@ -182,7 +182,7 @@ public class TelaCadastroBB {
 			+ "\t4 - Sacar\n"
 			+ "\t5 - Alterar Taxa de Rendimento\n"
 			+ "\t6 - Exibir Taxa de Rendimento\n"
-			+ "\t7 - Exibir Taxa de Rendimento\n"
+			+ "\t7 - Cobrar Mensalidade\n"
 			+ "\t8 - Listar Contas\n"
 			+ "\t\n=> "
 		);
